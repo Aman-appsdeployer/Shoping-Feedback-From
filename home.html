@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\amazone\feedback\statics\styles.css">
+    <title> Feedback From </title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    margin-right: 50px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1> Feedback Form </h1>
+        <form id="registration-form" method="POST" action="/submit">
+            <div class="form-control">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-control">
+                <label for="contact">Contact no. (Optional):</label>
+                <input type="tel" id="contact" name="contact">
+            </div>
+            <div class="form-control">
+                <label for="email">Email (Optional):</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-control">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="home_station">Home Station:</label>
+                <input type="text" id="home_station" name="home_station" required>
+            </div>
+            
+            <div class="form-control">
+                 <label><h1> Preferred Bottomwears: </h1> </label>
+                    <div>
+                        <input type="checkbox" id="fit-cargo" name="bottomwear" value="Fit Cargo">
+                        <label for="fit-cargo">Fit Cargo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lycra-pants" name="bottomwear" value="Lycra Pants">
+                        <label for="lycra-pants">Lycra Pants</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="formal-attire" name="bottomwear" value="Formal attire ( Shirt and Pant)">
+                        <label for="formal-attire">Formal attire ( Shirt and Pant)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="short-kurta" name="bottomwear" value="Short Kurta">
+                        <label for="short-kurta">Short Kurta</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="baggy-cargo" name="bottomwear" value="Baggy Cargo ( Six pocket )">
+                        <label for="baggy-cargo">Baggy Cargo ( Six pocket )</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="full-sleeves-kurta-pajama" name="bottomwear" value="Full sleeves Kurta and Pajama">
+                        <label for="full-sleeves-kurta-pajama">Full sleeves Kurta and Pajama</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="regular-fit-jeans" name="bottomwear" value="Regular fit jeans">
+                        <label for="regular-fit-jeans">Regular fit jeans</label>
+                    </div>
+                
+            </div>
+            <div class="form-control">
+                <label for="upwear"> <h1>  Preferred Upwears: </h1></label>
+                <div>
+                    <input type="checkbox" id="designer-shirt" name="upwear" value="Designer Shirt">
+                    <label for="designer-shirt">Designer Shirt</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="regular-fit-anime-tshirt" name="upwear" value="Regular Fit Anime Tshirt">
+                    <label for="regular-fit-anime-tshirt">Regular Fit Anime Tshirt</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chex-shirt" name="upwear" value="Chex Shirt">
+                    <label for="chex-shirt">Chex Shirt</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="down-shoulder-tshirt" name="upwear" value="Down Shoulder tshirt">
+                    <label for="down-shoulder-tshirt">Down Shoulder tshirt</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="front-printed-tshirt" name="upwear" value="Front Printed t-shirt">
+                    <label for="front-printed-tshirt">Front Printed t-shirt</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="polo-tshirt" name="upwear" value="Polo Tshirt">
+                    <label for="polo-tshirt">Polo Tshirt</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="back-print-regular-fit" name="upwear" value="Back Print tshirt Regular fit">
+                    <label for="back-print-regular-fit">Back Print tshirt Regular fit</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="back-print-baggy" name="upwear" value="Back Print tshirt baggy">
+                    <label for="back-print-baggy">Back Print tshirt baggy</label>
+                </div>
+            </div>
+            <div class="form-control">
+                <label> <h1> Women's Wear: </h1> </label>
+                <div>
+                    <input type="checkbox" id="anarkali-kurti" name="ledies-wear" value="Anarkali Kurti">
+                    <label for="anarkali-kurti">Anarkali Kurti</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="wide-cropped-leg-jeans" name="ledies-wear" value="Wide Cropped Leg Jeans">
+                    <label for="wide-cropped-leg-jeans">Wide Cropped Leg Jeans</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="baggy-cargo-six-pocket" name="ledies-wear" value="Baggy Cargo Six Pocket">
+                    <label for="baggy-cargo-six-pocket">Baggy Cargo Six Pocket</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="kurti-set" name="ledies-wear" value="Kurti Set">
+                    <label for="kurti-set">Kurti Set</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="regular-fit-jeans-women" name="ledies-wear" value="Regular Fit Jeans">
+                    <label for="regular-fit-jeans-women">Regular Fit Jeans</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="crop-tops" name="ledies-wear" value="Crop Tops">
+                    <label for="crop-tops">Crop Tops</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="suit" name="ledies-wear" value="Suit">
+                    <label for="suit">Suit</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="one-piece-dress" name="ledies-wear" value="One Piece Dress">
+                    <label for="one-piece-dress">One Piece Dress</label>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="footwear">Preferred Footwear:</label>
+                <input type="text" id="footwear" name="footwear">
+            </div>
+            <div class="form-control">
+                <label for="color">Favorite Color:</label>
+                <input type="text" id="color" name="color">
+            </div>
+            <div class="form-control">
+                <label for="chest_size">Chest Size:</label>
+                <input type="text" id="chest_size" name="chest_size">
+            </div>
+            <div class="form-control">
+                <label for="waist_size">Waist Size:</label>
+                <input type="text" id="waist_size" name="waist_size">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="C:\Users\Admin\Desktop\amazone\feedback\statics\script.js"></script>
+</body>
+</html>
